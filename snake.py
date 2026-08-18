@@ -1,11 +1,13 @@
-from turtle import Turtle
+from turtle import Turtle, down
 from constants import STARTING_POSITIONS, MOVE_DISTANCE
+from constants import UP, DOWN, RIGHT, LEFT
 
 class Snake:
 
     def __init__(self):
         self.segments = []
         self.create_snake()
+        self.head = self.segments[0]
 
 
     def create_snake(self):
@@ -22,4 +24,21 @@ class Snake:
             x_cor = self.segments[segment - 1].xcor()
             y_cor = self.segments[segment - 1].ycor()
             self.segments[segment].goto(x_cor, y_cor)
-        self.segments[0].fd(MOVE_DISTANCE)
+        self.head.fd(MOVE_DISTANCE)
+
+
+    def up(self):
+        if self.head.heading() != DOWN:
+            self.head.setheading(UP)
+
+    def down(self):
+        if self.head.heading() != UP:
+            self.head.setheading(DOWN)
+
+    def right(self):
+        if self.head.heading() != LEFT:
+            self.head.setheading(RIGHT)
+
+    def left(self):
+        if self.head.heading() != RIGHT:
+            self.head.setheading(LEFT)
