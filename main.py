@@ -16,17 +16,13 @@ def main():
     food = Food()
     scoreboard = Scoreboard()
 
-
     screen.listen()
     screen.onkey(snake.up, "Up")
     screen.onkey(snake.down, "Down")
     screen.onkey(snake.right, "Right")
     screen.onkey(snake.left, "Left")
 
-
-
     game_is_on = True
-
     while game_is_on:
         screen.update()
         time.sleep(0.1)
@@ -35,6 +31,7 @@ def main():
         # collision with food
         if snake.head.distance(food) < 15:
             food.refresh()
+            snake.extend()
             scoreboard.increase_score()
 
         # collision with wall
