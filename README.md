@@ -5,6 +5,7 @@ This is a classic snake game built using the built-in Python turtle library.
 
 # PROJECT STRUCTURE
 
+```text
 snake-game/
 ├── README.md
 ├── __pycache__/
@@ -17,6 +18,7 @@ snake-game/
 ├── scoreboard.py
 ├── snake.py
 └── uv.lock
+```
 
 ## TECHNOLOGIES USED
 - Python
