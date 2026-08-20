@@ -6,19 +6,17 @@ This is a classic snake game built using the built-in Python turtle library.
 # PROJECT STRUCTURE
 
 snake-game/
-├──.venv
+├── README.md
 ├── __pycache__/
-├──.gitignore
-├──.python-version
 ├── constants.py
 ├── food.py
+├── img
+│   └── snake.png
 ├── main.py
 ├── pyproject.toml
-├── README.md
 ├── scoreboard.py
 ├── snake.py
 └── uv.lock
-
 
 ## TECHNOLOGIES USED
 - Python
