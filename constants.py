@@ -10,4 +10,4 @@ RIGHT = 0
 
 # scoreboard
 ALIGNMENT = "center"
-FONT = ("Arial", 25, "normal")
+FONT = ("Arial", 24, "normal")
