@@ -1,6 +1,7 @@
 from turtle import Screen
 from snake import Snake
 from food import Food
+from scoreboard import Scoreboard
 import time
 
 
@@ -13,6 +14,7 @@ def main():
 
     snake = Snake()
     food = Food()
+    scoreboard = Scoreboard()
 
 
     screen.listen()
@@ -32,6 +34,7 @@ def main():
 
         if snake.head.distance(food) < 15:
             food.refresh()
+            scoreboard.increase_score()
 
     screen.mainloop()
 
