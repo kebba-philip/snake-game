@@ -1,7 +1,7 @@
 [project]
 name = "snake-game"
 version = "0.1.0"
-description = "Add your description here"
+description = "This is a classic snake game built using the built-in Python turtle library.Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
